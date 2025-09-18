@@ -1,0 +1,111 @@
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    padding: 20px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px 60px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    /* rộng hơn */
+    max-width: 95vw;
+    justify-items: center;
+    align-items: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 28px;
+
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+    unicode-bidi: isolate;
+    width: 450px;
+    height: 300px;
+}
+
+.confirm {
+    text-align: center;
+    padding-top: 10px;
+}
+
+input.login:hover {
+    background: linear-gradient(to right, #45a049, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+input.login {
+    background: linear-gradient(to right, #4CAF50, #45a049);
+    color: rgb(0, 0, 0);
+
+    cursor: pointer;
+
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+td {
+    padding: 10px 5px;
+
+}
+
+input.information {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 40px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}

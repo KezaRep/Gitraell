@@ -76,63 +76,69 @@ if ($isSubmit) {
 
     <div class="center-form">
         <div class="form-container">
-        <form method="POST" action="">
-            <h3>Đăng Kí Tài Khoản</h3>
-            <table>
-                <tr>
-                    <td>Username:</td>
-                    <td>
-                        <input type="text" name="username" placeholder="Nhập tên đăng nhập" value="<?php echo htmlspecialchars($username); ?>">
-                        <div class="error"><?php echo $error_user; ?></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Password:</td>
-                    <td>
-                        <input type="password" name="password" placeholder="Nhập mật khẩu">
-                        <div class="error"><?php echo $error_password1; ?></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Confirm Password:</td>
-                    <td>
-                        <input type="password" name="confirm_password" placeholder="Xác nhận mật khẩu">
-                        <div class="error"><?php echo $error_password2; ?></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Email:</td>
-                    <td>
-                        <input type="email" name="email" placeholder="Nhập email của bạn" value="<?php echo htmlspecialchars($email); ?>">
-                        <div class="error"><?php echo $error_email; ?></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Phone:</td>
-                    <td>
-                        <input type="text" name="phone" placeholder="Nhập số điện thoại" value="<?php echo htmlspecialchars($phone); ?>">
-                        <div class="error"><?php echo $error_phone; ?></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Birthday:</td>
-                    <td>
-                        <input type="date" name="birthday" value="<?php echo htmlspecialchars($birthday); ?>">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="confirm">
-                        <input type="submit" name="signup" value="Đăng kí ngay" class="signup">
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2" class="confirm">
-                        Đã có tài khoản? <a href="Login.php">Đăng nhập</a>
-                    </td>
-                </tr>
-            </table>
-        </form>
+            <form method="POST" action="">
+                <h3>Đăng Kí Tài Khoản</h3>
+                <table>
+                    <tr>
+
+                        <td>
+                            <input type="text" name="username" placeholder="Nhập tên đăng nhập"
+                                value="<?php echo htmlspecialchars($username); ?>">
+                            <div class="error"><?php echo $error_user; ?></div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <input type="password" name="password" placeholder="Nhập mật khẩu">
+                            <div class="error"><?php echo $error_password1; ?></div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <input type="password" name="confirm_password" placeholder="Xác nhận mật khẩu">
+                            <div class="error"><?php echo $error_password2; ?></div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <input type="email" name="email" placeholder="Nhập email của bạn"
+                                value="<?php echo htmlspecialchars($email); ?>">
+                            <div class="error"><?php echo $error_email; ?></div>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <input type="text" name="phone" placeholder="Nhập số điện thoại"
+                                value="<?php echo htmlspecialchars($phone); ?>">
+                            <div class="error"><?php echo $error_phone; ?></div>
+                        </td>
+                    </tr>
+                    
+                  <tr>
+    <td>
+        <label for="birthday" class="birthday">Ngày sinh</label>
+        <input type="date" id="birthday" name="birthday"
+            value="<?php echo htmlspecialchars($birthday); ?>">
+    </td>
+</tr>
+                    <tr>
+                        <td colspan="2" class="confirm">
+                            <input type="submit" name="signup" value="Đăng kí tài khoản" class="signup">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="confirm">
+                            Đã có tài khoản? <a href="Login.php">Đăng nhập</a>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
     </div>
 </body>
+
 </html>
