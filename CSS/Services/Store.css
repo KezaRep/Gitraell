@@ -1,0 +1,42 @@
+/* Để tránh header fixed che nội dung */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+    margin-top: 80px; /* bằng chiều cao header */
+    border: 1px solid #000;
+    height: 700px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    width: 20%;
+    height: 500px;
+    border: 1px solid #ff0000;
+    background-color: #ffd500;
+    margin-left: 10px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.main-content {
+    flex: 1;
+    height: 500px;
+    border: 1px solid #000000;
+    margin-right: 10px;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    padding: 15px;
+    background: #f5f5f5;
+    margin-top: 20px;
+}
