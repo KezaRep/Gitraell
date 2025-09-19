@@ -1,13 +1,13 @@
 const container = document.getElementById('container');
-const registerBtn = document.getElementById('register');
+const signupBtn = document.getElementById('sign-up');
 const loginBtn = document.getElementById('login');
 
-registerBtn.addEventListener('click', () => {
+signupBtn.addEventListener('click', () => {
     container.classList.add("active");
-    document.title = "Đăng nhập";
+    document.title = "Đăng kí tài khoản";
 });
 
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
-    document.title = "Đăng kí";
+    document.title = "Đăng nhập";
 });
