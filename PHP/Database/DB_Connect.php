@@ -1,14 +1,16 @@
 <?php 
-$sever ='localhost';
+$server ='localhost';
 $user = 'root';
 $pass ='';
-$db_name ='dacs2';
-$con = new mysqli($sever,$user,$pass,$db_name);
+$db_name ='gitraell';
 
-if($con){
-    mysqli_query($con,"SET NAMES 'utf8'"); 
+$con = new mysqli($server, $user, $pass, $db_name);
+
+// Kiểm tra kết nối
+if ($con->connect_error) {
+    die("Kết nối thất bại: " . $con->connect_error);
 }
-else{
-   echo("Kết nối thất bại");
-}
+
+// Thiết lập UTF-8
+$con->set_charset("utf8");
 ?>
