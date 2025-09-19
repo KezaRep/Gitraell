@@ -250,3 +250,17 @@ body {
     margin-bottom: 8px;
     display: block;
 }
+
+.success {
+    color: #28a745; /* xanh */
+    font-size: 13px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.success::before {
+    content: "✔ "; /* icon tick */
+    font-weight: bold;
+    margin-right: 5px;
+}
