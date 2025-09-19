@@ -1,6 +1,24 @@
+<?php
+include("../Database/DB_Connect.php");
+
+//Chạy session
+session_start();
+
+//Khai báo biến lỗi
+$error_username = ""; 
+$error_email ="";
+$error_password1 ="";
+$error_password2 ="";
+
+//Khai báo biến dữ liệu
+$username = isset($_POST['username']) ? $_POST['username'] : '';
+$email = isset($_POST['email']) ? $_POST['email'] :
+$password1 = isset($_POST['password1']) ? $_POST['password1'] : '';
+$password2 = isset($_POST['password2']) ? $_POST['password2'] : '';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +41,8 @@
                 <span>Hoặc đăng kí tài khoản Gitraell</span>
                 <input type="text" placeholder="Tên đăng nhập">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Mật khẩu">
+                <input type="password1" placeholder="Mật khẩu">
+                <input type="password2" placeholder="Xác nhận mật khẩu">
                 <input type="submit" name="signup" value="Đăng kí tài khoản" class="signup">
             </form>
         </div>
