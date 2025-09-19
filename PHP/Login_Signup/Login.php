@@ -37,6 +37,9 @@ if (isset($_POST['login'])) {
     if (empty($email)) {
         $error_email = '⚠ Vui lòng nhập email';
     }
+    elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $error_email = 'Email không hợp lệ';
+    }
     if (empty($password)) {
         $error_password = '⚠   Vui lòng nhập mật khẩu';
     } else {
@@ -67,8 +70,11 @@ if (isset($_POST['sign-up'])) {
     if (empty($email)) {
         $error_email = '⚠ Vui lòng nhập email';
     }
+    elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $error_email = 'Email không hợp lệ';
+    }
     if (empty($password1)) {
-        $error_password1 = '⚠   Vui lòng nhập mật khẩu';
+        $error_password1 = '⚠ Vui lòng nhập mật khẩu';
     } else {
         $valid = true;
         $password_length = strlen($password1);
@@ -76,7 +82,15 @@ if (isset($_POST['sign-up'])) {
             $error_password1 = '⚠ Mật khẩu phải chứa ít nhất 8 kí tự';
         }
     }
-}
+    if(empty($password2)) {
+        $error_password2 = '⚠ Vui lòng xác nhận mật khẩu';
+    }
+    else{
+        if($password1 != $password2) {
+            $error_password2 = '⚠ Mật khẩu xác nhận cần trùng với mật khẩu';
+    }}}
+
+
 ?>
 
 <!DOCTYPE html>
