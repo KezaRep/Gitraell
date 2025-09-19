@@ -36,7 +36,7 @@ if (isset($_POST['login'])) {
 
         if ($result->num_rows == 1) {
             $_SESSION['username'] = $username;
-            header("../../index.php");
+            header("Location: ../../index.php");
             exit;
         } else {
             $error_password = "⚠ Sai tên đăng nhập, email hoặc mật khẩu";
