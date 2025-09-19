@@ -47,6 +47,36 @@ if (isset($_POST['login'])) {
         }
     }
 }
+if (isset($_POST['sign-up'])) {
+    if (empty($username)) {
+        $error_username = '⚠ Vui lòng nhập tên đăng nhập';
+    } else {
+        $valid = true;
+        $username_length = strlen($username);
+        for ($i = 0; $i < $username_length; $i++) {
+            $char = $username[$i];
+            if (!(($char >= 'a' && $char <= 'z') || ($char >= 'A' && $char <= 'Z') || ($char >= '0' && $char <= '9'))) {
+                $valid = false;
+                break;
+            }
+        }
+        if (!$valid) {
+            $error_username = '⚠ Tên đăng nhập không được chứa ký tự đặc biệt';
+        }
+    }
+    if (empty($email)) {
+        $error_email = '⚠ Vui lòng nhập email';
+    }
+    if (empty($password1)) {
+        $error_password1 = '⚠   Vui lòng nhập mật khẩu';
+    } else {
+        $valid = true;
+        $password_length = strlen($password1);
+        if ($password_length < 8) {
+            $error_password1 = '⚠ Mật khẩu phải chứa ít nhất 8 kí tự';
+        }
+    }
+}
 ?>
 
 <!DOCTYPE html>
