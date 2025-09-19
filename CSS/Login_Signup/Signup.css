@@ -11,7 +11,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 90vh;
-    padding: 20px;
+    padding: 10px;
 }
 
 .form-container {
@@ -25,14 +25,13 @@ body {
     margin: auto;
     justify-items: center;
     align-items: center;
-    margin-top: 80px;
+
 }
 
 h3 {
     text-align: center;
     font-size: 28px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 table {

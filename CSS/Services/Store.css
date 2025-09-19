@@ -1,4 +1,4 @@
-/* Để tránh header fixed che nội dung */
+/* Để tránh header che nội dung - không cần header fixed nữa */
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,6 @@ body {
 .wrapper {
     display: flex;
     gap: 10px;
-    margin-top: 80px; /* bằng chiều cao header */
     border: 1px solid #000;
     height: 700px;
     width: 100%;
@@ -19,18 +18,16 @@ body {
     height: 500px;
     border: 1px solid #ff0000;
     background-color: #ffd500;
-    margin-left: 10px;
-    margin-top: 5px;
     padding: 10px;
+    /* bỏ margin-left và margin-top dư thừa */
 }
 
 .main-content {
     flex: 1;
     height: 500px;
     border: 1px solid #000000;
-    margin-right: 10px;
-    margin-top: 5px;
     padding: 10px;
+    /* bỏ margin-right và margin-top dư thừa */
 }
 
 .footer {
