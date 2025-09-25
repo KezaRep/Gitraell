@@ -8,7 +8,7 @@
         </div>
 
         <ul class="nav-list">
-            <li><a href="/Gitraell/index.php">Trang chủ</a></li>
+            <li><a href="/Gitraell/PHP/Homepage/Homepage.php">Trang chủ</a></li>
             <li><a href="/Gitraell/PHP/Services/Store.php">Cửa hàng</a></li>
             <li><a href="../HTML/Services.html">Services</a></li>
             <li><a href="../HTML/Contact.html">Contact</a></li>
